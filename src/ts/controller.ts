@@ -32,13 +32,13 @@ app.controller("appController", ($scope, $log) => {
     };
 
     let list = [
-        new Music("Моцарт", "Реквием по мечте", 0),
-        new Music("Arkasia", "Know your enemies", 1),
+        new Music("Author", "Title of audio 1", 0),
+        new Music("Author", "Title of audio 2", 1),
     ];
 
     let idMap = {
-        0: "http://localhost/yourfriends/mozart.mp3",
-        1: "http://localhost/yourfriends/music.mp3",
+        0: "http://localhost/yourfriends/*music*.mp3",
+        1: "http://localhost/yourfriends/*music*.mp3"
     };
 
     $scope.musicList = list;

@@ -18,12 +18,12 @@ app.controller("appController", function ($scope, $log) {
         document.getElementById("indicator").style.left = percent * 100 + "%";
     };
     var list = [
-        new Music("Моцарт", "Реквием по мечте", 0),
-        new Music("Arkasia", "Know your enemies", 1),
+        new Music("Author", "Title of audio 1", 0),
+        new Music("Author", "Title of audio 2", 1),
     ];
     var idMap = {
-        0: "http://localhost/yourfriends/mozart.mp3",
-        1: "http://localhost/yourfriends/music.mp3"
+        0: "http://localhost/yourfriends/*music*.mp3",
+        1: "http://localhost/yourfriends/*music*.mp3"
     };
     $scope.musicList = list;
     $scope.volume = .5;
