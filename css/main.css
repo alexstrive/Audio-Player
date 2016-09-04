@@ -1,0 +1,22 @@
+.btn-play {
+  background-color: #f00;
+  color: #fff;
+  padding: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+}
+#progress {
+  background-color: #808080;
+  height: 5px;
+  width: 100%;
+}
+#progress:hover {
+  cursor: pointer;
+}
+#progress #progress-value {
+  height: 5px;
+  width: 0;
+  background-color: #f00;
+  transition: 0.3s ease;
+}
